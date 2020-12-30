@@ -1,11 +1,11 @@
 .header {
     align-items: center;
-    background: #8f57fd;
     color: white;
     display: flex;
     height: 100px;
     justify-content: space-between;
-    top: 0px;
+    position: absolute;
+    top: 0;
     width: 100%;
   }
   
