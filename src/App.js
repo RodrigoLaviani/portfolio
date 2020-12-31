@@ -4,7 +4,7 @@ import Carousel from './components/Carousel';
 import CarouselItem from './components/CarouselItem';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import './assets/styles/components/App.scss'
+import './assets/styles/App.scss'
 
 const App = () => {
   // const items = new Array(5)

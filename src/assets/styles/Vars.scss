@@ -1,3 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 $theme-font: 'PT Serif', serif;
+$main-color: #00000e;
+
+body {
+  background: $main-color;
+  font-family: $theme-font;
+}
