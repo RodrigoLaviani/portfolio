@@ -4,7 +4,8 @@
     }
   
     .footer {
-      align-items: flex-start;
-      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
