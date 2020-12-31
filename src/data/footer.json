@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "linkedin-icon.png",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rodrigo-laviani-99352015b/"
+    },
+    {
+        "id": 2,
+        "icon": "github-icon.png",
+        "name": "GitHub",
+        "url": "https://github.com/RodrigoLaviani"
+    },
+    {
+        "id": 3,
+        "icon": "gmail-icon.png",
+        "name": "Mail",
+        "url": "mailto:rodrigolaviani@gmail.com"
+    },
+    {
+        "id": 4,
+        "icon": "instagram-icon.png",
+        "name": "Instagram",
+        "url": "https://www.instagram.com/rodrilaviani/"
+    }
+]

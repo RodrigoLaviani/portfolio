@@ -1,0 +1,21 @@
+.link {
+    padding-right: 1%;
+}
+
+.link a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.link a:hover {
+    font-weight: 600;
+    text-shadow: 4%;
+}
+
+.link img {
+    border-radius: 30%;
+    background-color: white;
+}
