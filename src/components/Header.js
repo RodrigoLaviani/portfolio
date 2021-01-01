@@ -5,13 +5,14 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__menu">
-                <div className="header__menu--profile">
+                <div>Contacto</div>
+                <div className="header__menu--language">
                     <p>Idioma</p>
+                    <ul>
+                        <li><a href="/">Inglés</a></li>
+                        <li><a href="/">Español</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="/">Inglés</a></li>
-                    <li><a href="/">Español</a></li>
-                </ul>
             </div>
         </header>
     )
