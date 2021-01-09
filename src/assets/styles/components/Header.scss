@@ -1,56 +1,47 @@
 .header {
-    align-items: center;
-    color: white;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+  display: block;
+  width: 100%;
+  height: 10%;
+}
+
+.header__menu {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: inherit;
+  height: 100%;
+}
   
-  .header__img {
-    margin-left: 30px;
-    width: 200px;
-  }
+.header__menu--language ul {
+  display: none;
+  list-style: none;
+  margin: 0px 0px 0px 30px;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+}
   
-  .header__menu {
-      margin-right: 30px;
-      display: inherit;
-      align-items: center;
-      justify-content: space-evenly;
-      width: inherit;
-  }
-  
-  .header__menu--language ul {
-    display: none;
-    list-style: none;
-    margin: 0px 0px 0px 30px;
-    padding: 0px;
-    position: absolute;
-    width: 100px;
-    text-align: right;
-  }
-  
-  .header__menu--language:hover ul, ul:hover {
-      display: block;
-  }
-  
-  .header__menu--language li {
-    margin: 10px 0px;
-  }
-  
-  .header__menu--language li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .header__menu--language li a:hover {
-    font-weight: 600;
-  }
-  
-  .header__menu--language {
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-  }
+.header__menu--language:hover ul, ul:hover {
+    display: block;
+}
+
+.header__menu--language li {
+  margin: 10px 0px;
+}
+
+.header__menu--language li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__menu--language li a:hover {
+  font-weight: 600;
+}
+
+.header__menu--language {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}

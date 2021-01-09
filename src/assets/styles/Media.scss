@@ -1,19 +1,47 @@
-@media only screen and (max-width: 600px) {
-    .main__description--title {
-      font-size: 30px;
-    }
-  
-    .footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-    }
+// Mobile
+@media only screen and (max-width: 360) {
+  .carousel {
 
-    .link {
-      padding: 0;
-    }
-
-    .link a {
-      padding: 0;
-    }
   }
+  
+  .main__description--title {
+    font-size: 1em;
+  }
+}
+
+
+// Tablet
+@media only screen and (max-width: 720) {
+  .carousel {
+    
+  }
+
+  .main__description--title {
+    font-size: 2em;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .link {
+    padding: 0;
+  }
+
+  .link a {
+    padding: 0;
+  }
+}
+
+// Desktop
+@media only screen and (max-width: 1920) {
+  .carousel {
+    height: 20em;
+  }
+
+  .main__description--title {
+    font-size: 3em;
+  }
+}

@@ -6,9 +6,11 @@ import contacts from '../data/footer.json'
 const Footer = () => {
     return (
         <footer className="footer">
-            {
-                (contacts || []).map(contact => <Link key={contact.id} icon={contact.icon} name={contact.name} url={contact.url}></Link>)
-            }
+            <div className="footer-container">
+                {
+                    (contacts || []).map(contact => <Link key={contact.id} icon={contact.icon} name={contact.name} url={contact.url}></Link>)
+                }
+            </div>
         </footer>
     );
 };

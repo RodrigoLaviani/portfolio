@@ -10,7 +10,7 @@ const App = () => {
   // const items = new Array(5)
 
   return (
-    <div className="App">
+    <div className="app">
       <Header></Header>
       <Categories>
         <Carousel>

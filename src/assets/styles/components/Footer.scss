@@ -1,10 +1,16 @@
 .footer {
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 0%;
-    display: flex;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+  display: block;
+  height: 10%;
+  width: 100%;
+}
+
+.footer-container {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: flex-end;
+  padding-left: 0%;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+}

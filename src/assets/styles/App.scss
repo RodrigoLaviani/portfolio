@@ -2,20 +2,15 @@
 @import './Media.scss';
 
 body {
-    margin: 0;
-    font-family: $theme-font;
-    background: $main-color;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+  margin: 0;
+  font-family: $theme-font;
+  background: $main-color;
+}
 
-.App {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
+.app {
+  display: block;
+  overflow: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
