@@ -14,3 +14,20 @@
   bottom: 0;
   width: inherit;
 }
+
+.footer-arrow {
+  margin-right: 2%;
+  animation: arrow 1s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0% {
+  transform: translate(3px, 0px);
+  }
+  50% {
+  transform: translate(20px, 0px);
+  }
+  100% {
+  transform: translate(3px, 0px);
+  }
+}
