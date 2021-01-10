@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__menu">
-                <div>Contacto</div>
+                <span>Contacto</span>
                 <div className="header__menu--language">
-                    <p>Idioma</p>
+                    <span>Idioma</span>
                     <ul>
                         <li><a href="/">Inglés</a></li>
                         <li><a href="/">Español</a></li>

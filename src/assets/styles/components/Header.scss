@@ -12,6 +12,13 @@
   width: inherit;
   height: 100%;
 }
+
+.header__menu span {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: large;
+  cursor: pointer;
+}
   
 .header__menu--language ul {
   display: none;
