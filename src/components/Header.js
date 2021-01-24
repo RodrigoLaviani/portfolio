@@ -1,9 +1,16 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import text from '../data/header.json'
 import '../assets/styles/components/Header.scss'
 
 const Header = () => {
+    const [ languageSp, setLanguageSp ] = useState(false)
     const dispatch = useDispatch();
+    const isSpanish = useSelector(state => state.state.isSpanish)
+
+    useEffect(() => {
+        setLanguageSp(isSpanish)
+    }, [isSpanish])
 
     const handlerShowLinks = () => {
         dispatch({ type: 'arrow', payload: true })
@@ -12,15 +19,23 @@ const Header = () => {
         }, 5000)
     }
 
+    const handlerChangeLanguage = (isSpanish) => {
+        dispatch({ type: 'change_language', payload: isSpanish})
+    }
+
+    const textTemplate = () => {
+        return languageSp ? text[1] : text[0]
+    }
+
     return (
         <header className="header">
             <div className="header__menu">
-                <span onClick={() => handlerShowLinks()}>Contacto</span>
+                <span onClick={() => handlerShowLinks()}>{textTemplate().aboutMe}</span>
                 <div className="header__menu--language">
-                    <span>Idioma</span>
+                    <span>{textTemplate().language.title}</span>
                     <ul>
-                        <li><a href="/">Inglés</a></li>
-                        <li><a href="/">Español</a></li>
+                        <li><span className='option' onClick={() => handlerChangeLanguage(false)}>{textTemplate().language.english}</span></li>
+                        <li><span className='option' onClick={() => handlerChangeLanguage(true)}>{textTemplate().language.spanish}</span></li>
                     </ul>
                 </div>
             </div>

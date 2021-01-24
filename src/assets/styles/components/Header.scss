@@ -32,18 +32,19 @@
   
 .header__menu--language:hover ul, ul:hover {
     display: block;
+    margin-left: 50px;
 }
 
 .header__menu--language li {
   margin: 10px 0px;
 }
 
-.header__menu--language li a {
+.header__menu--language li option {
   color: white;
   text-decoration: none;
 }
 
-.header__menu--language li a:hover {
+.header__menu--language li option:hover {
   font-weight: 600;
 }
 
