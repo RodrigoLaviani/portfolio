@@ -1,11 +1,21 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import '../assets/styles/components/Header.scss'
 
 const Header = () => {
+    const dispatch = useDispatch();
+
+    const handlerShowLinks = () => {
+        dispatch({ type: 'arrow', payload: true })
+        setTimeout(() => {
+            dispatch({ type: 'arrow', payload: false })
+        }, 5000)
+    }
+
     return (
         <header className="header">
             <div className="header__menu">
-                <span>Contacto</span>
+                <span onClick={() => handlerShowLinks()}>Contacto</span>
                 <div className="header__menu--language">
                     <span>Idioma</span>
                     <ul>
