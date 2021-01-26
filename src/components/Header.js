@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import useLanguage from './../shared/customHooks/useLanguage'
 import text from '../data/header.json'
 import '../assets/styles/components/Header.scss'
 
 const Header = () => {
-    const [ languageSp, setLanguageSp ] = useState(false)
-    const dispatch = useDispatch();
-    const isSpanish = useSelector(state => state.state.isSpanish)
-
-    useEffect(() => {
-        setLanguageSp(isSpanish)
-    }, [isSpanish])
+    const { language, handlerChangeLanguage } = useLanguage()
+    const dispatch = useDispatch()
 
     const handlerShowLinks = () => {
         dispatch({ type: 'arrow', payload: true })
@@ -19,12 +15,8 @@ const Header = () => {
         }, 5000)
     }
 
-    const handlerChangeLanguage = (isSpanish) => {
-        dispatch({ type: 'change_language', payload: isSpanish})
-    }
-
     const textTemplate = () => {
-        return languageSp ? text[1] : text[0]
+        return language ? text[1] : text[0]
     }
 
     return (
