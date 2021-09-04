@@ -1,15 +1,12 @@
 import React from 'react';
-import CarouselContainer from './components/CarouselContainer';
-import Footer from './components/Footer';
-import Header from './components/Header';
 import './assets/styles/App.scss';
 
 const App = () => {
   return (
     <div className="app">
-      <Header />
-      <CarouselContainer />
-      <Footer />
+      <div>
+        <h2 style={{color: 'white'}}>{`Header inside viewport.`}</h2>
+      </div>
     </div>
   );
 }
